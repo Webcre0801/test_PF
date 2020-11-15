@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>KANA_portfolio</title>
+
+		<meta charset="utf-8">
+
+		<meta property="og:url" content="http://sackpf0901.starfree.jp/home.html" />
+		<meta property="og:title" content="KANA_portfolio" />
+		<meta property="og:description" content="http://sackpf0901.starfree.jp/home.html" />
+		<meta property="og:image" content="./img/about/profpic.jpg" />
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="http://sackpf0901.starfree.jp/home.html" />
+		<meta property="og:locale" content="ja_JP" />
+		<meta name="twitter:card" content="Summary Card" />
+		<meta name="twitter:site" content="@sample" />
+
+		<meta name="description" content="http://sackpf0901.starfree.jp/home.html" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+		<link rel="icon" href="./img/tab-bar/favicon.ico">
+
+		<link rel="stylesheet" type="text/css" href="home_sp.css">
+		<link rel="stylesheet" type="text/css" href="home.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./home.js"></script>
+	</head>
+
+<body>
+
+	<header>
+		<button>MENU</button>
+	</header>
+		<nav class="slide-nav">
+			<ul>
+				<li></li>
+				<li><a href="./home.html">HOME</a></li>
+				<li><a href="./about.html">ABOUT&nbsp;ME</a></li>
+				<li><a href="./works.html">WORKS</a></li>
+				<li><a href="./home.html#contact">CONTACT</a></li>
+				<li><a href="https://about.twitter.com/ja.html" target="_blank"><img src="./img/sns_icon/twitter.png" class="sns_icon" alt="twitter"></a></li>
+				<li><a href="https://ja-jp.facebook.com/" target="_blank"><img src="./img/sns_icon/facebook.png" class="sns_icon" alt="facebook"></a></li>
+			</ul>
+		</nav>
+		
+	<div id="home">
+		<img src="./img/home/homepic.jpg" class="homepic" alt="homepic">
+
+		<p class="logo-box">
+			<img src="./img/home/top-logo.png" class="top-logo" alt="top-logo">
+		</p>
+	</div>
+
+	<main>
+	<div class="wrapper">
+		<div id="about"><!-- ★自己PR・略歴 ＆ 目指すデザイナー像 -->
+			<div class="main-title">ABOUT&nbsp;ME</div>
+				<div class="self-introdcution">
+				<img src="./img/about/profpic.jpg" class="profpic_sp" alt="profpic_sp"> <!-- SP -->
+					<div class="name">
+						<p class="name_ja">櫻井&nbsp;佳南</p>
+						<p class="name_eng">SAKURAI&nbsp;KANA</p>
+					</div>
+						<p>
+						1995年生まれ。A型。<br>
+						千葉県出身だが落花生アレルギー。<br>
+						回る寿司で幸せになれる。<br>
+						東京の回る寿司も110円にしてください。
+						</p>
+					<div class="more"><a href="./about.html">MORE</a></div>
+					</div><!-- self-introdcution -->
+				<img src="./img/about/profpic.jpg" class="profpic_pc" alt="profpic_pc"> <!-- PC -->
+		</div><!-- about -->
+
+		<div id="works"><!-- ★作品（制作物） -->
+			<div class="main-title">WORKS</div>
+				<div class="work-box">
+					<a href="./works.html#work_1">
+					<div class="work-item">
+						<img src="./img/works/works/pic_1.jpg" class="thumbnail" alt="ECサイト（ファッション系）">
+					</div></a>
+					<a href="./works.html#work_2">
+					<div class="work-item">
+						<img src="./img/works/works/pic_2.jpg" class="thumbnail" alt="コーポレートサイト（雑貨系）">
+					</div></a>
+					<!-- <a href="./works.html#work_3">
+					<div class="work-item">
+						<img src="./img/works/works/pic_3.jpg" class="thumbnail" alt="作品タイトル3">
+					</div></a> -->
+				</div><!-- work-box -->
+		</div><!-- works -->
+	</div> <!-- wrapper -->
+
+		<div id="contact"><!-- ★連絡先 -->
+			<div class="main-title">CONTACT</div>
+
+				<!-- 問い合わせフォーム -->
+				<form action="http://sackpf0901.starfree.jp/contact.php" method="post">
+					<div class="sentence">
+						<p>お問い合わせは下記のフォームからお願いいたします。</p>
+					</div>
+
+					<div id="nameSection" class="form-contents">
+						<p>名前</p>
+						<p class="alert">※名前が入力されていません</p>
+							<input type="text" name="name" value="" id="name">
+					</div>
+
+					<div id="addressSection" class="form-contents">
+						<p>メールアドレス</p>
+						<p class="alert">※メールアドレスが入力されていません</p>
+							<input type="text" name="address" value="" id="address">
+					</div>
+
+					<div id="colorSection" class="form-contents">
+						<p>好きな色（アンケート）</p>
+						<p class="alert">※好きな色が入力されていません</p>
+							<select name="color" id="color">
+								<option value="none">---</option>
+								<option value="赤">赤</option>
+								<option value="橙">橙</option>
+								<option value="黄">黄</option>
+								<option value="緑">緑</option>
+								<option value="青">青</option>
+								<option value="藍">藍</option>
+								<option value="紫">紫</option>
+								<option value="特になし">特になし</option>
+							</select>
+					</div>
+
+					<div id="inqSection" class="form-contents">
+						<p>内容</p>
+						<p class="alert">※内容が入力されていません</p>
+							<textarea name="contents_inq" value="" id="contents_inq"></textarea>
+					</div>
+
+					<div class="form-button">
+						<input type="submit" value="送信" id="submitBtn">
+					</div>
+				</form>
+		</div><!-- contact -->
+
+	</main>
+
+	<footer>
+		<p class="copyright">©&nbsp;2020&nbsp;SAKURAI&nbsp;KANA</p>
+	</footer>
+
+	<!-- start animation -->
+	<div class="start">
+		<div class="start_img"><img src="./img/home/start.png" alt="start" class="startpic"></div>
+	</div>
+
+</body>
+</html>
